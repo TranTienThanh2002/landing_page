@@ -1,0 +1,100 @@
+:root {
+  --PrimaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 90%, 42%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: hsl(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+}
+
+.about .setContainer .title {
+  color: var(--blackColor);
+  line-height: 1.5rem;
+  padding-bottom: 0.2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.about .setContainer .mainContent {
+  gap: 1rem;
+}
+.about .setContainer .mainContent .singleItem {
+  text-align: center;
+}
+.about .setContainer .mainContent .singleItem img {
+  background: rgba(247, 144, 54, 0.265);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.about .setContainer .mainContent .singleItem h3 {
+  font-weight: 700;
+  color: var(--blackColor);
+  padding: 0.5rem;
+  font-size: 1.4rem;
+}
+.about .setContainer .mainContent .singleItem p {
+  font-size: 13px;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  color: var(--textColor);
+}
+.about .setContainer .videoCard {
+  margin-top: 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.609)), url("../../Assets/anh-phong-canh-hung-vy-nui-va-song-820x513.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about .setContainer .videoCard .cardContent {
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+.about .setContainer .videoCard .cardContent .cardText h2 {
+  color: var(--whiteColor);
+  font-weight: 600;
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+}
+.about .setContainer .videoCard .cardContent .cardText p {
+  color: var(--whiteColor);
+  opacity: 0.7;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.about .setContainer .videoCard .cardContent .cardVideo {
+  border: 2px solid var(--whiteColor);
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+}
+.about .setContainer .videoCard .cardContent .cardVideo video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 769px) {
+  .about .setContainer .videoCard .cardContent {
+    gap: 4rem;
+    padding: 4rem 3rem;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .about .setContainer .videoCard .cardContent .cardText h2 {
+    font-size: 2rem;
+  }
+  .about .setContainer .videoCard .cardContent .cardText p {
+    opacity: 0.7;
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about .setContainer .mainContent {
+    padding: 2.5rem 0;
+  }
+}/*# sourceMappingURL=About.css.map */
